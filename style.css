@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /* Indica que o tamanho sempre vai ser definido no limite da borda, independente de padding, por exemplo se o height for 300px, e por conta de um padding mt alto, ultrapasse esses 300px, a imagem vai ficar foraa da box (furando a border) dela, pois esta passando do tamanho total da box*/
+
+    /* Informações geralmente padroes universais nos projetos */
+}
+
+body {
+  background-image: url("assets/bg.jpg");
+  background-repeat: no-repeat; /*keyword*/
+  background-size: 100% auto; /*widht heigt*/
+  background-position: top center; /*vertical horizontal*/
+  background-color: #121214;
+  color: white;
+}
+
+body *, :root {
+    font-family: "Inter";
+    line-height: 160%;
+}
+
+header{
+    padding-top: 2rem;
+    text-align: center;
+}
+
+header img {
+    width: 15rem;
+}
+
+main{
+    max-width: 36rem;
+    width: 90%;
+    margin: 3rem auto; /*3rem pra top,bottom e auto para right,left*/
+}
+
+section{
+    background-image: linear-gradient();
+}
