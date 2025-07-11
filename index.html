@@ -21,13 +21,14 @@
   <main>
     <section>
       <div>
-        <h2>Assistente de Meta</h2>
+        <h2>Assistente de Games</h2>
         <p>Pergunte sobre estratégias, build e dicas para seus jogos</p>
+        <p>Ou pergunte apenas alguma curiosidade mesmo &#128517</p>
 
         <form id="form">
           <input id="apiKey" type="password" placeholder="Informe a API KEY do Gemini">
 
-          <select id="gameSelect">
+          <select id="gameSelect" required>
             <option value="">Selecione um jogo</option>
             <option value="valorant">Valorant</option>
             <option value="lol">League Of Legends</option>
@@ -41,15 +42,15 @@
           </button>
         </form>
 
-        <div id="aiResponse">
+        <div id="aiResponse" class="hidden">
           <div class="response-content">
-
           </div>
         </div>
       </div>
     </section>
   </main>
 
+  <script src="  https://unpkg.com/showdown/dist/showdown.min.js"></script>
   <script src="./script.js"></script>
 </body>
 
